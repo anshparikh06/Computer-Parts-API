@@ -289,9 +289,6 @@ The example output below shows the agent returning a structured breakdown of ava
 ![Figure 4: Example Agent Output. The Full System Working End to End](images/fig27.png)
 *Figure 4: Example Agent Output. The Full System Working End to End*
 
-![Figure 5: Agent Tool List. All MCP Tools Successfully Connected](images/fig28.png)
-*Figure 5: Agent Tool List. All MCP Tools Successfully Connected*
-
 ### Section 3 Complete
 
 Watsonx Orchestrate is now connected to your MCP server and, through it, to your OpenShift API. The agent can translate natural language into real API calls and return meaningful results — all without the user ever needing to know what an API endpoint looks like.
@@ -341,7 +338,7 @@ kubectl get nodes
 
 You will now be logged in to the OpenShift cluster on your local device.
 
-![Figure 1: Logging in to Openshift](images/fig29.png)
+![Figure 1: Logging in to Openshift](images/fig28.png)
 *Figure 1: Logging in to OpenShift*
 
 ### 3. Clone and Navigate to UI Project
