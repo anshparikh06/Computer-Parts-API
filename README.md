@@ -245,7 +245,7 @@ We complete this step because it transforms our system from a traditional API se
 
 ### 1. Access Watsonx Orchestrate
 
-From your TechZone environment, locate the Watsonx Orchestrate instance. Open the link that was provided in Section 0 if you are unable to find the correct one. In the search bar, type in "WatsonX Orchestrate." You should be brought to the page shown below. After that, click **view the existing instance**. You should land on the Watsonx Orchestrate welcome page.
+From your hybrid cloud account, search for "WatsonX Orchestrate" in the search bar. For location, pick whichever server is closest to you. **Start a trial->Read and agree to the terms->Create->Launch WatsonX orchestrate**. You should land on the Watsonx Orchestrate welcome page.
 
 ![Figure 1: Accessing WatsonX Orchestrate](images/fig22.png)
 *Figure 1: Accessing WatsonX Orchestrate*
