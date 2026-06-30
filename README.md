@@ -91,7 +91,7 @@ Create a project (**Add → Create Project**) and name it `fxnpc`.
 
 ### 3. Deploy the API using YAML
 
-A YAML in our context is a configuration file that tells OpenShift what to create and how to run our application. From the previous screen, follow the next steps.
+Use this [Deployment YAML file](https://raw.githubusercontent.com/anshparikh06/Computer-Parts-API/refs/heads/main/deployment.yaml) to create the necesarry object in the OpenShift cluster. From the previous screen, follow the next steps.
 
 Import the YAML file (**+Add → Import YAML**), replace the contents, and click **Create**.
 
