@@ -182,6 +182,7 @@ First, if you have not done so already, go into your TechZone environment and lo
 Once you are inside API Connect, you must create a project to organize your API. Click **Create → New API Project**. Then select **Create blank project**. The project name can be anything, but to keep things simple, name it `computer-parts-api`. Then click **Create**.
 
 ![Figure 2: Create -> New API Project -> Create Blank Project -> Name -> Create](images/fig16.png)
+
 *Figure 2: Create → New API Project → Create Blank Project → Name → Create*
 
 ### 3. Set Up the Correct Environment
@@ -226,11 +227,8 @@ Your MCP server is configured. Now you will publish it so it is accessible throu
 
 When you have the Gateway Endpoint URL, Section 2 is complete.
 
-![Figure 5a: Publishing the Project](images/fig19.png)
-*Figure 5a: Publishing the Project*
-
 ![Figure 5b: Viewing Endpoints After Successful Publish](images/fig21.png)
-*Figure 5b: Viewing Endpoints After Successful Publish*
+*Figure 5a: Viewing Endpoints After Successful Publish*
 
 ### Section 2 Complete
 
