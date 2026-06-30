@@ -1,4 +1,4 @@
-# Computer Parts API on OpenShift - Step by Step Deployment Guide
+# IBM Datapower Interact Gateway Demo - Step by Step Deployment Guide
 
 ## Overview
 
