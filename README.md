@@ -1,7 +1,3 @@
-Computer Parts API on OpenShif
-
-End-to-end AI system using OpenShift, API Connect, and Watsonx Orchestrate
-
 # Computer Parts API on OpenShift - Step by Step Deployment Guide
 
 ## Overview
