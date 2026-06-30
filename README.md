@@ -245,7 +245,7 @@ We complete this step because it transforms our system from a traditional API se
 
 ### 1. Access Watsonx Orchestrate
 
-From your hybrid cloud account, search for "WatsonX Orchestrate" in the search bar. For location, pick whichever server is closest to you. **Start a trial->Read and agree to the terms->Create->Launch WatsonX orchestrate**. You should land on the Watsonx Orchestrate welcome page.
+From your [hybrid cloud account]([https://techzone.ibm.com/collection/69c6c2db1bdc18e8109d08ed](https://cloud.ibm.com/resources)), search for "WatsonX Orchestrate" in the search bar. For location, pick whichever server is closest to you. **Start a trial->Read and agree to the terms->Create->Launch WatsonX orchestrate**. You should land on the Watsonx Orchestrate welcome page.
 
 ![Figure 1: Accessing WatsonX Orchestrate](images/fig23.png)
 *Figure 1: Accessing WatsonX Orchestrate*
