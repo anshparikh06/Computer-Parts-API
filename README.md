@@ -168,7 +168,7 @@ By the end of this section you will have:
 
 ### 1. Access the API Connect Environment
 
-First, if you have not done so already, go into your TechZone environment and locate **webMethods Hybrid Integration L4 Platform Enablement**. The links are in Section 0. Expand the environment and locate the **API Connect / API Studio** link, and click it to open the API Connect interface.
+The best way to do this is to request access to what was mentioned in section 0 and click the link that will get emailed to you. The other way is to go into your TechZone environment and locate **webMethods Hybrid Integration L4 Platform Enablement**. Expand the environment and locate the **API Connect / API Studio** link, and click it to open the API Connect interface.
 
 ![Figure 1: Correct Link to Select/Welcome Screen](images/fig15.png)
 *Figure 1: Correct Link to Select/Welcome Screen*
