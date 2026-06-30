@@ -54,11 +54,11 @@ To make this guide even easier to understand, it is broken up into four main sec
 
 ## Section 0 — Getting Started
 
-To get started, you need to request the environment from TechZone. Use the following link, and click on **OpenShift Cluster OCPv IBM Cloud**. This link is for Section 1. Go through the necessary steps to get access to the environment, and make sure you have an opportunity ready and available to use. You must also have an IBM hybrid cloud account.
+To get started, you need to request the environment from TechZone. In TechZone, click on **OpenShift Cluster OCPv IBM Cloud**. This link is for Section 1. Go through the necessary steps to get access to the environment, and make sure you have an opportunity ready and available to use. You must also have an IBM hybrid cloud account.
 
-Now, for Section 2, use this link to get access to the **webMethods Hybrid Integration** platform. This platform uses API Connect and DataPower to place the backend API behind a gateway that controls, routes, and manages how it is accessed by external systems.
+Now, for Section 2, get access to the **webMethods Hybrid Integration** platform. This platform uses API Connect and DataPower to place the backend API behind a gateway that controls, routes, and manages how it is accessed by external systems.
 
-Finally, use this link to get access to **Watsonx Orchestrate**. Watsonx Orchestrate is used in Section 3 to create an AI agent that understands natural language and dynamically calls the API to retrieve and return the data.
+Finally, get access to **Watsonx Orchestrate**. Watsonx Orchestrate is used in Section 3 to create an AI agent that understands natural language and dynamically calls the API to retrieve and return the data.
 
 Once you gain access to all three of these environments from TechZone, you will have all of the resources necessary to complete this demo.
 
@@ -100,6 +100,7 @@ A YAML in our context is a configuration file that tells OpenShift what to creat
 Import the YAML file (**+Add → Import YAML**), replace the contents, and click **Create**.
 
 ![Figure 4: Correct Buttons to click](images/fig05.png)
+
 *Figure 4: Correct Buttons to click*
 
 ### 4. View Your Application
@@ -107,6 +108,7 @@ Import the YAML file (**+Add → Import YAML**), replace the contents, and click
 To view your application, go to **Topology**, then you will see `computer-parts-api`. You should see a circle with your app name and a blue ring around it.
 
 ![Figure 5: Correct button to view Topology](images/fig06.png)
+
 *Figure 5: Correct button to view Topology*
 
 ### 5. Check POD Status (VERY IMPORTANT)
@@ -121,11 +123,13 @@ The PODs can get stuck in pending because the system is asking for too many reso
 1. **Reduce the POD count.** Click the three dots, then select what is circled below. Switch the number of pods from 2 to 1, then click **Save**.
 
 ![Figure 6: Edit Pod Count](images/fig08.png)
+
 *Figure 6: Edit Pod Count*
 
 2. **Now, reduce the resource limits.** Click the three dots again and click what is circled below. Set CPU Request to `100m` and CPU Limit to `250m`. Ensure values are entered in millicores (for example, `100m` = 0.1 CPU). Next, set Memory Request to `256Mi` and Memory Limit to `512Mi`. Save your changes.
 
 ![Figure 7: Edit Resource Limits](images/fig09.png)
+
 *Figure 7: Edit Resource Limits*
 
 3. Now that all of these changes have been made, you need to **restart rollout** in order to fully apply them. Once again, click the three dots and click the button circled below. The PODs should now be running.
@@ -147,6 +151,7 @@ This entire Computer Parts Store API should load and you should see Swagger UI, 
 Once you've followed all of these steps, your PODs should be running, the route URL should work, the Swagger UI should load, and the API returns JSON. You have now successfully deployed a containerized API to OpenShift, made it accessible via a public URL, and verified that it works. This matters because the API is the foundation of your architecture — everything will depend on it: DataPower will call it, and Watsonx Orchestrate will retrieve data from it. You have now successfully completed the following part of our overall architecture.
 
 ![Figure 10: Congrats! Section 1 is complete](images/fig14.png)
+
 *Figure 10: Congrats! Section 1 is complete*
 
 ---
