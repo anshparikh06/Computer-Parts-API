@@ -50,7 +50,7 @@ To make this guide even easier to understand, it is broken up into four main sec
 
 ## Section 0 — Getting Started
 
-To get started, you need to request the environment from TechZone. In TechZone, click on **OpenShift Cluster OCPv IBM Cloud**. This link is for Section 1. Go through the necessary steps to get access to the environment, and make sure you have an opportunity ready and available to use. You must also have an IBM hybrid cloud account.
+To get started, you need to request the environment from TechZone. Go to this [link](https://techzone.ibm.com/collection/69c6c2db1bdc18e8109d08ed) in Techzone to reserve your Openshift Cluster. This environment will be used in for Section 1 and 4. Go through the necessary steps to get access to the environment, and make sure you have an opportunity ready and available to use. You must also have an IBM hybrid cloud account.
 
 Now, for Section 2, get access to the **webMethods Hybrid Integration** platform. This platform uses API Connect and DataPower to place the backend API behind a gateway that controls, routes, and manages how it is accessed by external systems.
 
