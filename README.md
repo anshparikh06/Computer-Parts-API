@@ -1,4 +1,4 @@
-# ai-enterprise-api-integration
+Computer Parts API on OpenShif
 
 End-to-end AI system using OpenShift, API Connect, and Watsonx Orchestrate
 
