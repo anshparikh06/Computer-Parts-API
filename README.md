@@ -44,17 +44,17 @@ In simple terms, this is the actual brain that understands user requirements and
 
 In simple terms, this is what the user will actually interact with.
 
-To make this guide even easier to understand, it is broken up into four main sections, representing the four components of this architecture. There is also a Section 0, which includes everything needed to get started, but it can be skipped if you are familiar with TechZone and already have a hybrid cloud account.
+To make this guide even easier to understand, it is broken up into four main sections, representing the four components of this architecture. There is also a Section 0, which includes everything needed to get started, but it can be skipped if you are familiar with TechZone and already have a cloud account.
 
 ---
 
 ## Section 0 — Getting Started
 
-To get started, you need to request the environment from TechZone. Go to this [link](https://techzone.ibm.com/collection/69c6c2db1bdc18e8109d08ed) in Techzone to reserve your Openshift Cluster. This environment will be used in for Section 1 and 4. Go through the necessary steps to get access to the environment, and make sure you have an opportunity ready and available to use. You must also have an IBM hybrid cloud account.
+To get started, you need to request the environment from TechZone. Go to this [link](https://techzone.ibm.com/collection/69c6c2db1bdc18e8109d08ed) in Techzone to reserve your Openshift Cluster. This environment will be used in for Section 1 and 4. Go through the necessary steps to get access to the environment, and make sure you have an opportunity ready and available to use. You must also have an IBM cloud account.
 
 Now, for Section 2, get access to the **webMethods Hybrid Integration** platform. To get acccess to the correct one, join the #iwhi-internal-shareholders channel in Slack, go to Workflows, and submit the request titled "Americas IWHI Subscription Access." Approval typically takes 1-2 business days. Once approved, the environment will appear in your dropdown.This platform uses API Connect and DataPower to place the backend API behind a gateway that controls, routes, and manages how it is accessed by external systems.
 
-Finally, you must create/open your [hybrid cloud account](https://cloud.ibm.com/resources) to use Watsonx Orchestrate. Watsonx Orchestrate is used in Section 3 to create an AI agent that understands natural language and dynamically calls the API to retrieve and return the data.
+Finally, you must create/open your [cloud account](https://cloud.ibm.com/resources) to use Watsonx Orchestrate. Watsonx Orchestrate is used in Section 3 to create an AI agent that understands natural language and dynamically calls the API to retrieve and return the data.
 
 Once you gain access to all three of these environments from TechZone, you will have all of the resources necessary to complete this demo.
 
@@ -245,7 +245,7 @@ We complete this step because it transforms our system from a traditional API se
 
 ### 1. Access Watsonx Orchestrate
 
-From your [hybrid cloud account](https://cloud.ibm.com/resources), search for "WatsonX Orchestrate" in the search bar. For location, pick whichever server is closest to you. **Start a trial->Read and agree to the terms->Create->Launch WatsonX orchestrate**. You should land on the Watsonx Orchestrate welcome page.
+From your [cloud account](https://cloud.ibm.com/resources), search for "WatsonX Orchestrate" in the search bar. For location, pick whichever server is closest to you. **Start a trial->Read and agree to the terms->Create->Launch WatsonX orchestrate**. You should land on the Watsonx Orchestrate welcome page.
 
 ![Figure 1: Accessing WatsonX Orchestrate](images/fig23.png)
 *Figure 1: Accessing WatsonX Orchestrate*
