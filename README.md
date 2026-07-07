@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide walks through how to deploy and connect a Computer Parts API within a modern hybrid architecture using Red Hat OpenShift, IBM DataPower, and Watsonx Orchestrate.
+This guide walks through how to deploy and connect all the requiered components to deliver a Datapower Interact Gateway Demo. The architecture has the following components: Computer Parts API and Demo UI deployed on Red Hat OpenShift, IBM DataPower Interact Gateway and Watsonx Orchestrate.
 
 The architecture is divided into four key components, each serving a specific role. To make this easier to follow, this guide is broken into four sections, with each section focusing on one component of the system.
 
