@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide walks through how to deploy and connect all the requiered components to deliver a Datapower Interact Gateway Demo. The architecture has the following components: Computer Parts API and Demo UI deployed on Red Hat OpenShift, IBM DataPower Interact Gateway and Watsonx Orchestrate.
+This guide walks through on how to deploy and connect all the requiered components to deliver a Datapower Interact Gateway Demo. The architecture has the following components: Computer Parts API and Demo UI deployed on Red Hat OpenShift, IBM DataPower Interact Gateway and Watsonx Orchestrate.
 
 The architecture is divided into four key components, each serving a specific role. To make this easier to follow, this guide is broken into four sections, with each section focusing on one component of the system.
 
@@ -16,31 +16,31 @@ The diagram below represents the full system being built in this guide. At a hig
 ### 1. Red Hat OpenShift (Backend API Layer)
 
 - Hosts the Computer Parts API
-- Runs inside containers (packaged applications)
+- Runs as a pre-built container image (packaged applications)
 - Acts as the system of record
 
-In simple terms, this is the section where the actual data and business logic live. The API provides endpoints such as customers, orders, and products. All the data is dynamically generated, which makes it ideal for demos and testing.
+In simple terms, this is the component where the actual data and business logic live. The API provides endpoints such as customers, orders, and products. All the data is dynamically generated, which makes it ideal for demos and testing.
 
-### 2. API Connect & DataPower (MCP Integration Layer)
+### 2. API Connect & DataPower Interact Gateway (MCP Integration Layer)
 
 - Sits between the backend API and consumers
-- Acts as an API gateway
+- Acts as an API gateway (MCP Server)
 - Controls how APIs are exposed and accessed
 
-In simple terms, this is where we create a secure "middle layer" that manages and routes the API calls that get made. Instead of calling the API directly, all requests go through DataPower, which handles routing, applies policies, and exposes APIs as tools, specifically MCP (Model Context Protocol) tools.
+In simple terms, this is where we create a secure "middle layer" that manages and routes the API calls that get made. Instead of calling the API directly, all requests go through DataPower Interact Gateway, which handles routing, applies policies, and exposes APIs as tools, specifically MCP (Model Context Protocol) tools.
 
 ### 3. Watsonx Orchestrate (AI Orchestration Layer)
 
 - Hosts an AI agent
 - Decides which API to call based on user input
-- Uses the APIs exposed by DataPower
+- Uses the APIs exposed by DataPower Interact Gateway
 
 In simple terms, this is the actual brain that understands user requirements and decides what to then do. For example, if the user asks to get customer 10001A, Watsonx Orchestrate will interpret the request, call the correct API, and return the formatted results.
 
 ### 4. Demo Web Application (User Interface Layer)
 
 - A simple web interface exposed over the internet
-- Contains an embedded AI agent
+- Contains the embedded Watsonx Orchestrate AI agent
 
 In simple terms, this is what the user will actually interact with.
 
