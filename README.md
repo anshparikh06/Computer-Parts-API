@@ -16,7 +16,7 @@ The diagram below represents the full system being built in this guide. At a hig
 ### 1. Red Hat OpenShift (Backend API Layer)
 
 - Hosts the Computer Parts API
-- Runs as a pre-built container image (packaged applications)
+- Runs as a pre-built container image (packaged application)
 - Acts as the system of record
 
 In simple terms, this is the component where the actual data and business logic live. The API provides endpoints such as customers, orders, and products. All the data is dynamically generated, which makes it ideal for demos and testing.
@@ -40,6 +40,7 @@ In simple terms, this is the actual brain that understands user requirements and
 ### 4. Demo Web Application (User Interface Layer)
 
 - A simple web interface exposed over the internet
+- Runs as a pre-built container image (packaged application)
 - Contains the embedded Watsonx Orchestrate AI agent
 
 In simple terms, this is what the user will actually interact with.
