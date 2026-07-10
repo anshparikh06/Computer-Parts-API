@@ -49,7 +49,7 @@ To make this guide even easier to understand, it is broken up into four main sec
 
 ---
 
-## Section 0 — Getting Started
+## Section 0 — Prerequisites
 
 To get started, you need to request the environment from TechZone. Go to this [link](https://techzone.ibm.com/collection/69c6c2db1bdc18e8109d08ed) in Techzone to reserve your Openshift Cluster. This environment will be used in for Section 1 and 4. Go through the necessary steps to get access to the environment, and make sure you have an opportunity ready and available to use. You must also have an IBM cloud account.
 
@@ -57,7 +57,7 @@ Now, for Section 2, get access to the **webMethods Hybrid Integration** platform
 
 Finally, you must create/open your [cloud account](https://cloud.ibm.com/resources) to use Watsonx Orchestrate. Watsonx Orchestrate is used in Section 3 to create an AI agent that understands natural language and dynamically calls the API to retrieve and return the data.
 
-Once you gain access to all three of these environments from TechZone, you will have all of the resources necessary to complete this demo.
+Once you gain access to all three of these environments, you will have all of the resources necessary to complete this demo.
 
 ---
 
@@ -65,7 +65,7 @@ Once you gain access to all three of these environments from TechZone, you will 
 
 In this first section, we will focus only on the foundation of the architecture:
 
-1. Deploy the API into OpenShift
+1. Deploy the API layer into OpenShift
 2. Make it accessible via a public URL
 3. Validate that it returns data
 
@@ -145,7 +145,7 @@ This entire Computer Parts Store API should load and you should see Swagger UI, 
 
 ### Section 1 Conclusion
 
-Once you've followed all of these steps, your PODs should be running, the route URL should work, the Swagger UI should load, and the API returns JSON. You have now successfully deployed a containerized API to OpenShift, made it accessible via a public URL, and verified that it works. This matters because the API is the foundation of your architecture — everything will depend on it: DataPower will call it, and Watsonx Orchestrate will retrieve data from it. You have now successfully completed the following part of our overall architecture.
+Once you've followed all of these steps, your PODs should be running, the route URL should work, the Swagger UI should load, and the API returns JSON. You have now successfully deployed a containerized API to OpenShift, made it accessible via a public URL, and verified that it works. This matters because the API is the foundation of your architecture — everything will depend on it: DataPower Interact Gateway will call it, and Watsonx Orchestrate will retrieve data from it. You have now successfully completed the following part of our overall architecture.
 
 ![Figure 10: Congrats! Section 1 is complete](images/fig14.png)
 
@@ -155,7 +155,7 @@ Once you've followed all of these steps, your PODs should be running, the route 
 
 ## Section 2 — IBM DataPower (Integration Layer)
 
-In this section, you will place your OpenShift API behind an enterprise API gateway using IBM API Connect and DataPower. More importantly, you will transform your traditional REST API into a set of AI-ready tools using **MCP (Model Context Protocol)**. This is what allows Watsonx Orchestrate to call your API intelligently in Section 3.
+In this section, you will place your OpenShift API behind an enterprise API gateway using IBM API Connect and DataPower Interact Gateway. More importantly, you will transform your traditional REST API into a set of AI-ready tools using **MCP (Model Context Protocol)**. This is what allows Watsonx Orchestrate to call your API intelligently in Section 3.
 
 > **Note:** If the requested environment doesn't work for you, you will have to use links from **Americas v12**, which you should get an email for after requesting access. The same applies to Section 3.
 
@@ -165,7 +165,7 @@ By the end of this section you will have:
 - Your API published as discoverable MCP tools
 - A Gateway Endpoint URL for connecting Watsonx Orchestrate
 
-**Why do this?** In real enterprise systems, APIs are never exposed directly to the public or to AI systems. Instead, they are placed behind a gateway that controls who can access them, enforces security policies, and manages traffic. IBM DataPower provides all of this.
+**Why do this?** In real enterprise systems, APIs are never exposed directly to the public or to AI systems. Instead, they are placed behind a gateway that controls who can access them, enforces security policies, and manages traffic. IBM DataPower Interact Gateway provides all of this.
 
 ### 1. Access the API Connect Environment
 
